@@ -2,10 +2,12 @@
 
 in windows run cmd as administrator:
 
-bde-manage -status
+manage-bde -status
 
-bde-manage -off c:
+manage-bde -off X:
 
-bde-manage -off driverName
+manage-bde -off c:
+
+manage-bde -off driverName
 
 
