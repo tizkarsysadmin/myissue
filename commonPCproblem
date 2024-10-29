@@ -1,4 +1,4 @@
-1- bitlocker errors:
+1- bitlocker errors in win 11:
 
 in windows run cmd as administrator:
 
@@ -9,5 +9,12 @@ manage-bde -off X:
 manage-bde -off c:
 
 manage-bde -off driverName
+
+
+
+2- chenge admin password in win 11:
+
+acounts/sign-in options ---> pasword ---> change
+
 
 
