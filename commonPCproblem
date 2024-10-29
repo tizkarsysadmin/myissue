@@ -1,0 +1,11 @@
+1- bitlocker errors:
+
+in windows run cmd as administrator:
+
+bde-manage -status
+
+bde-manage -off c:
+
+bde-manage -off driverName
+
+
