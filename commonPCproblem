@@ -18,3 +18,13 @@ acounts/sign-in options ---> pasword ---> change
 
 
 
+3- run rpm on ubuntu:
+
+sudo apt-get install alien
+sudo alien my_package.rpm
+sudo dpkg -i my_package.deb
+
+
+
+
+
