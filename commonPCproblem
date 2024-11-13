@@ -24,6 +24,16 @@ sudo apt-get install alien
 sudo alien my_package.rpm
 sudo dpkg -i my_package.deb
 
+4- install vcenter
+
+give 8 vcpu  - 24 ram
+dns ok test with dig and nslookup for esxi host and vcsa
+add dns to hosts. chech /ets/resolve.conf in dns server - rndc reload
+check clock and time zone in vcsa and pc that i connect 
+check with telnet and fqdn name
+
+
+
 
 
 
