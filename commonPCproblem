@@ -35,11 +35,21 @@ check with telnet and fqdn name
 
 5- in acer System Model	Aspire C24-1700 Processor	12th Gen Intel(R) Core(TM) i5-1235U, 1300 Mhz, 10 Core(s), 12 Logical Processor(s) ---> intel vt
 
-in bios we dont have option for intel-vt to enable virtualization in cpu. lets used some trick?
+in some new 12th gen bios its enabled builtin and just make trick to on it?!!!!
+
+first download and check this in leo-moon cpu-v> it should be virtualization support ok  - but of vt-x enabled is off then go to next step.
+
+
+in bios if you dont have option for intel-vt to enable virtualization in cpu. lets used some trick?
 
 first go to device security> core isolation > change memory integirity to off
 
-then go to add and remove feature in program > make hyper-v on and off
+then go to add and remove feature in program > make hyper-v on > restart> then  hyper-v off > restart
+
+check again in leo-moon cpu-v> it should be virtualization support ok  - vt-x enabled is on . thats all.
+
+
+
 
 
 
