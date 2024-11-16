@@ -35,7 +35,12 @@ check with telnet and fqdn name
 
 5- in acer System Model	Aspire C24-1700 Processor	12th Gen Intel(R) Core(TM) i5-1235U, 1300 Mhz, 10 Core(s), 12 Logical Processor(s) ---> intel vt
 
-in bios we dont have option for intel-vt to enable virtualization in cpu. then we used a trick?
+in bios we dont have option for intel-vt to enable virtualization in cpu. lets used some trick?
+
+first go to device security> core isolation > change memory integirity to off
+
+then go to add and remove feature in program > make hyper-v on and off
+
 
 
 
