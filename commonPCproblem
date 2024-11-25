@@ -70,6 +70,45 @@ ren utilman.exe cmd.exe
 ren utilman.exe.bak utilman.exe
 
 
+7- redirect in iis
+
+
+Ensure you have the URL Rewrite feature added. In IIS manager configure the following in the URL rewrite section.
+download it from  https://www.iis.net/downloads/microsoft/url-rewrite
+URL Rewrite Module 2.1
+and install it. then in iis go to yourwebsite>url rewrite
+
+    Create inbound rule (Blank Rule)
+    Requested URL : Matches the pattern
+    Using: Wildcards
+    Pattern: *
+
+Conditions
+
+    Input: {HTTPS}
+    Type: Matches the pattern
+    Pattern: off
+
+Action
+
+    Action Type: Redirect
+    Redirect URL: https://{HTTP_HOST}{REQUEST_URI}
+    Append Query String Checked
+    Redirect type: Found (302)
+
+Once you have done this. Create a condition.
+
+    Right click your new rule
+    Conditions -> Add+
+    Condition Input : {HTTPS}
+    Matches the Pattern
+    Pattern: off
+
+Essentially it should look like this:
+
+Redirect Rule
+
+All traffic using a http request will be automatically redirected to the https port.
 
 
 
