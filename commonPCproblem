@@ -111,6 +111,15 @@ Redirect Rule
 All traffic using a http request will be automatically redirected to the https port.
 
 
+8- tomcat service
+
+[root@webserver ~]# #/var/portal/web1/tomcat/bin/startup.sh &
+[root@webserver ~]# #/var/portal/web2/tomcat/bin/startup.sh &
+[root@webserver ~]# #/var/portal/web3/tomcat/bin/startup.sh &
+
+ps aux
+
+
 
 
 
